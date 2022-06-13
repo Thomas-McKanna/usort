@@ -1,10 +1,10 @@
 repos:
   - repo: local
     hooks:
-      - id: mypy
-        name: mypy
+      - id: usort
+        name: usort
         language: system
-        entry: mypy
+        entry: usort
         minimum_pre_commit_version: 2.9.2
         require_serial: true
         types_or: [python, pyi]
