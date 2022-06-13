@@ -1,11 +1,8 @@
-repos:
-  - repo: local
-    hooks:
-      - id: usort
-        name: usort
-        language: system
-        entry: usort
-        minimum_pre_commit_version: 2.9.2
-        require_serial: true
-        types_or: [python, pyi]
-        args: [format]
+- id: usort
+  name: usort
+  language: python
+  entry: usort
+  minimum_pre_commit_version: 2.9.2
+  require_serial: true
+  types_or: [python, pyi]
+  args: [format]
